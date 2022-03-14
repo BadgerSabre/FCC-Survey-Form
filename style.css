@@ -1,0 +1,10 @@
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+#title-description {
+    text-align: center;
+}
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(135,135,228,1) 0%, rgba(0,212,255,1) 100%);
+}

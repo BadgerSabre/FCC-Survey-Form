@@ -8,9 +8,11 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title">Dream Vacation Survey</h1>
-    <p id="description">Please let us know your ideal vacation.</p>
-    <div class="container container-fluid">
+    <div id="title-description">
+        <h1 id="title">Dream Vacation Survey</h1>
+        <p id="description">Please let us know your ideal vacation.</p>
+    </div>
+    <div id="main-form" class="container container-fluid">
         <form id="survey-form">
             <div id="name" class="mb-3">
               <label id="name-label" for="exampleInputPassword1" class="form-label">Name</label>
@@ -28,7 +30,7 @@
               </div>
               <div class="form-group">
                 <p>Which option best describes your current role?</p>
-                <select id="dropdown" name="role" class="form-control" required>
+                <select id="dropdown" name="role" class="form-control mb-3" required>
                   <option disabled selected value>Select current role</option>
                   <option value="student">Student</option>
                   <option value="job">Full Time Job</option>
@@ -36,7 +38,7 @@
                   <option value="preferNo">Prefer not to say</option>
                   <option value="other">Other</option>
                 </select>
-            <div id="radio-buttons">
+            <div id="radio-buttons" class="mb-3">
                 <h5>Select a vacation duration.</h5>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
@@ -60,18 +62,37 @@
             <div id="checkboxes">
                 <h5>Select potential destinations.</h5>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="Japan" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                      Japan
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="Caribbean" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                      Caribbean
                     </label>
                   </div>
-            </div>       
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Europe" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Europe
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="South-America" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      South America
+                    </label>
+                  </div>
+            </div>
+            <div id="comments" class="mt-3">
+                <h5>Any additional comments.</h5>
+                <div class="form-floating mt-3 mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                  </div>  
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
     </div>
